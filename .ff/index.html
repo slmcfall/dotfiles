@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+
+<!--
+***************************************************************************
+
+
+
+
+	IF YOU OPEN THIS FILE IN A PLAIN-TEXT EDITOR
+	YOU'RE GONNA HAVE A BAD TIME
+
+
+
+
+< HOW TO CUSTOMIZE THE BACKGROUND >
+
+1.	Find a replacement picture, it must be in JPG format
+
+2.	Put it into the folder and delete the original background
+
+3.	Rename your picture to "bg.jpg"
+	
+		INCORRECT
+		bg.jpg.jpg
+		
+		CORRECT!
+		bg.jpg
+
+
+
+
+< HOW TO ADD A NEW HOTKEY >
+
+1.	Replace INSERT URL HERE with the COMPLETE address
+	of the website you want to add. Example:
+
+	var hotkey6 = 'http://deliciousroom.com/';
+
+
+2.	Don't forget to delete the two slashes:
+
+	INCORRECT
+	//	var hotkey6 = 'http://deliciousroom.com/';
+
+	CORRECT!
+	var hotkey6 = 'http://deliciousroom.com/';
+	
+	
+	PLEASE NOTE
+	"hotkey6" means you must press the "6" key to go
+	to the assigned website.
+	"//" means the hotkey is disabled.
+
+
+
+
+< HOW TO ADD A NEW WEBSITE TO THE LIST >
+
+1.	Replace the # with the COMPLETE address
+	of the website you want to add. Example:
+	
+	<a href="http://www.youporn.com/"> ...
+
+2.	Replace 'untitled' with the name
+	of the website you want to add. Example:
+
+	... </span>YOUPORN</a> ...
+
+	If you don't screw it up, it'll look like this:
+
+	<a href="http://www.youporn.com/"><span>1</span>YOUPORN</a>
+
+	(implying you want YouPorn as your #1 bookmark)
+
+
+	PLEASE NOTE
+	<span>1</span>, <span>2</span> (and so on...)
+	are just reminders for the hotkeys,
+	you can delete them if you want to.
+
+
+
+
+< STOP SCROLLING FOR FUCK'S SAKE, I HAVEN'T FINISHED YET >
+
+	SHIT'S IMPORTANT, YO
+
+-	This is meant for users with a MINIMUM knowledge of HTML
+-	Don't touch anything if you don't know what you're doing
+-	No, I won't add a searchbox
+-	9 is the maximum number of bookmarks you can add
+-	Hide the bookmarks you won't use as HTML comments
+
+
+
+
+< CREDITS AND STUFF >
+
+Inspired by - http://fav.me/d534zko
+Completely rewritten and redesigned by - http://yaromanzarek.deviantart.com/
+
+Website - deliciousroom.com
+Tumblr - ylrd
+Twitter - @deliciousroom
+Dribbble - dribbble.com/deliciousroom
+
+
+
+
+***************************************************************************
+-->
+
+<html>
+
+	<head>
+		<title>Start Page</title>
+		
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="resources/s.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script src="resources/shortcuts.js"></script>
+		<script src="resources/hotkeys.js"></script>
+		<script src="resources/date.js"></script>
+	
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<script>
+	// HOTKEYS AND ASSIGNED WEBSITES
+	
+	var hotlink1 = "https://news.ycombinator.com/";
+	var hotlink2 = "https://github.com/slmcfall";
+	var hotlink3 = "http://grantland.com/";
+	var hotlink4 = "http://reddit.com/";
+	var hotlink5 = "http://forecast.io/#/f/37.2756,-76.7097";
+//	var hotlink6 = 'INSERT URL HERE';
+//	var hotlink7 = 'INSERT URL HERE';
+//	var hotlink8 = 'INSERT URL HERE';
+//	var hotlink9 = 'INSERT URL HERE';
+	</script>
+	</head>
+
+
+
+
+
+
+
+
+	<body> 
+	<div id="cover"></div>
+	<p id="date"></p>
+
+
+	<!-- LIST OF DISPLAYED WEBSITES -->
+	<ul id="mainNav">
+		<li id="link1"><a href="https://news.ycombinator.com/"><span>1</span>HackerNews</a></li>
+		<li id="link2"><a href="https://github.com/slmcfall"><span>2</span>github</a></li>
+		<li id="link3"><a href="http://grantland.com/"><span>3</span>grantland</a></li>
+		<li id="link4"><a href="http://reddit.com/"><span>4</span>reddit</a></li>
+		<li id="link5"><a href="http://forecast.io/#/f/37.2756,-76.7097"><span>5</span>Weather</a></li>
+<!--		<li id="link6"><a href="#"><span>6</span>untitled</a></li>		-->
+<!--		<li id="link7"><a href="#"><span>7</span>untitled</a></li>		-->
+<!--		<li id="link8"><a href="#"><span>8</span>untitled</a></li>		-->
+<!--		<li id="link9"><a href="#"><span>9</span>untitled</a></li>		-->
+	</ul>
+
+	</body>
+
+</html>
